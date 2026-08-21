@@ -1971,6 +1971,43 @@ if (DOM.cartItems) {
             }
 
 
+             
+            /* =========================================================
+   CONTINUE SHOPPING
+   ---------------------------------------------------------
+   Empty cart ke Continue Shopping button ko handle karta hai.
+========================================================= */
+
+const continueShopping =
+    document.getElementById(
+        "continueShopping"
+    );
+
+if (continueShopping) {
+
+    continueShopping.addEventListener(
+        "click",
+        () => {
+
+            /* Close cart */
+            closeCart();
+
+            /* Scroll to products */
+            document
+                .getElementById(
+                    "products"
+                )
+                ?.scrollIntoView({
+                    behavior: "smooth"
+                });
+
+        }
+    );
+
+}
+
+
+
             /* ================= CART BUTTON ================= */
 
             const button =
