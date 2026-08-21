@@ -1,0 +1,3247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =========================================================
+         NOVASTORE
+         PART 01 — DOCUMENT CONFIGURATION
+    ========================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="NovaStore — Modern shopping for modern lifestyles."
+    >
+
+    <meta
+        name="theme-color"
+        content="#ffffff"
+    >
+
+    <title>NovaStore — Modern Shopping</title>
+
+
+    <!-- =========================================================
+         STYLES
+    ========================================================== -->
+
+    <!-- Main stylesheet -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =========================================================
+         PART 01
+         PREMIUM NAVBAR
+         
+         IMPORTANT:
+         Existing JS IDs are preserved.
+    ========================================================== -->
+
+    <header
+        class="navbar"
+        id="siteHeader"
+    >
+
+        <!-- =====================================================
+             BRAND
+        ====================================================== -->
+
+        <a
+            href="#home"
+            class="logo"
+            aria-label="NovaStore Home"
+        >
+
+            <span>Nova</span>Store
+
+        </a>
+
+
+        <!-- =====================================================
+             MAIN NAVIGATION
+        ====================================================== -->
+
+        <nav
+            class="main-nav"
+            aria-label="Main navigation"
+        >
+
+            <!-- Shop -->
+
+            <a
+                href="#products"
+                class="nav-link"
+            >
+                Shop
+            </a>
+
+
+            <!-- New Arrivals -->
+
+            <a
+                href="#products"
+                class="nav-link nav-new"
+            >
+
+                <span>
+                    New Arrivals
+                </span>
+
+                <span
+                    class="nav-badge"
+                    aria-label="New"
+                >
+                    NEW
+                </span>
+
+            </a>
+
+
+            <!-- Electronics -->
+
+            <a
+                href="#categories"
+                class="nav-link"
+            >
+                Electronics
+            </a>
+
+
+            <!-- Fashion -->
+
+            <a
+                href="#categories"
+                class="nav-link"
+            >
+                Fashion
+            </a>
+
+
+            <!-- Deals -->
+
+            <a
+                href="#products"
+                class="nav-link deals-link"
+            >
+                Deals
+            </a>
+
+        </nav>
+
+
+        <!-- =====================================================
+             NAVBAR ACTIONS
+        ====================================================== -->
+
+        <div class="nav-actions">
+
+
+            <!-- =================================================
+                 SEARCH
+            ================================================== -->
+
+            <button
+                type="button"
+                id="navSearchBtn"
+                class="nav-icon"
+                aria-label="Search products"
+                title="Search"
+            >
+
+                <i
+                    class="fa-solid fa-magnifying-glass"
+                    aria-hidden="true"
+                ></i>
+
+            </button>
+
+
+            <!-- =================================================
+                 WISHLIST
+            ================================================== -->
+
+            <button
+                type="button"
+                id="wishlistBtn"
+                class="nav-icon"
+                aria-label="Wishlist"
+                title="Wishlist"
+            >
+
+                <i
+                    class="fa-regular fa-heart"
+                    aria-hidden="true"
+                ></i>
+
+                <span
+                    class="nav-count"
+                    aria-label="Wishlist items"
+                >
+                    0
+                </span>
+
+            </button>
+
+
+            <!-- =================================================
+                 THEME TOGGLE
+            ================================================== -->
+
+            <button
+                type="button"
+                id="themeBtn"
+                class="nav-icon"
+                aria-label="Toggle dark mode"
+                title="Toggle theme"
+            >
+
+                <i
+                    class="fa-solid fa-moon"
+                    aria-hidden="true"
+                ></i>
+
+            </button>
+
+
+            <!-- =================================================
+                 SHOPPING CART
+            ================================================== -->
+
+            <button
+                type="button"
+                id="cartBtn"
+                class="nav-icon cart-btn"
+                aria-label="Open shopping cart"
+                title="Shopping cart"
+            >
+
+                <i
+                    class="fa-solid fa-cart-shopping"
+                    aria-hidden="true"
+                ></i>
+
+                <span
+                    id="cartCount"
+                    aria-label="Cart items"
+                >
+                    0
+                </span>
+
+            </button>
+
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         END OF PART 01
+    ========================================================== -->
+
+
+        <!-- =========================================================
+         PART 02 — HERO SECTION
+         
+         Purpose:
+         Main landing section of NovaStore.
+
+         Important:
+         Existing classes are preserved so current CSS/JS
+         continues to work.
+    ========================================================== -->
+
+    <main>
+
+        <section
+            class="hero"
+            id="home"
+            aria-labelledby="hero-title"
+        >
+
+            <!-- =================================================
+                 HERO CONTENT
+            ================================================== -->
+
+            <div class="hero-content">
+
+
+                <!-- SALE / CAMPAIGN BADGE -->
+
+                <div
+                    class="hero-badge"
+                    aria-label="Summer sale"
+                >
+
+                    <span
+                        aria-hidden="true"
+                    ></span>
+
+                    <span>
+                        SUMMER SALE — UP TO 40% OFF
+                    </span>
+
+                </div>
+
+
+                <!-- =================================================
+                     HERO TITLE
+                ================================================== -->
+
+                <h1 id="hero-title">
+
+                    Your style.
+
+                    <span>
+                        Your world.
+                    </span>
+
+                </h1>
+
+
+                <!-- =================================================
+                     HERO DESCRIPTION
+                ================================================== -->
+
+                <p class="hero-text">
+
+                    Discover trending fashion,
+                    smart electronics and everyday
+                    essentials — curated for you.
+
+                </p>
+
+
+                <!-- =================================================
+                     HERO ACTIONS
+                ================================================== -->
+
+                <div class="hero-actions">
+
+
+                    <!-- PRIMARY ACTION -->
+
+                    <a
+                        href="#products"
+                        class="primary-btn"
+                        aria-label="Shop NovaStore collection"
+                    >
+
+                        <span>
+                            Shop Collection
+                        </span>
+
+                        <i
+                            class="fa-solid fa-arrow-right"
+                            aria-hidden="true"
+                        ></i>
+
+                    </a>
+
+
+                    <!-- SECONDARY ACTION -->
+
+                    <a
+                        href="#categories"
+                        class="secondary-btn"
+                        aria-label="Explore product categories"
+                    >
+
+                        Explore Categories
+
+                    </a>
+
+                </div>
+
+
+                <!-- =================================================
+                     TRUST / SOCIAL PROOF
+                ================================================== -->
+
+                <div
+                    class="hero-trust"
+                    aria-label="NovaStore statistics"
+                >
+
+
+                    <!-- PRODUCTS -->
+
+                    <div class="trust-item">
+
+                        <strong>
+                            2K+
+                        </strong>
+
+                        <span>
+                            Products
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        class="trust-divider"
+                        aria-hidden="true"
+                    ></div>
+
+
+                    <!-- CUSTOMERS -->
+
+                    <div class="trust-item">
+
+                        <strong>
+                            50K+
+                        </strong>
+
+                        <span>
+                            Customers
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        class="trust-divider"
+                        aria-hidden="true"
+                    ></div>
+
+
+                    <!-- RATING -->
+
+                    <div class="trust-item">
+
+                        <strong>
+                            4.9/5
+                        </strong>
+
+                        <span>
+                            Rating
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 HERO VISUAL
+            ================================================== -->
+
+            <div class="hero-visual">
+
+
+                <!-- MAIN HERO IMAGE -->
+
+                <div class="hero-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=85"
+                        alt="NovaStore fashion and lifestyle collection"
+                        loading="eager"
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                     FLOATING FLASH DEAL CARD
+                ================================================== -->
+
+                <div
+                    class="hero-floating-card"
+                    aria-label="Flash deal"
+                >
+
+                    <div class="floating-icon">
+
+                        <i
+                            class="fa-solid fa-bolt"
+                            aria-hidden="true"
+                        ></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Flash Deals
+                        </strong>
+
+                        <span>
+                            Limited time only
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     DISCOUNT TAG
+                ================================================== -->
+
+                <div
+                    class="hero-sale-tag"
+                    aria-label="40 percent discount"
+                >
+
+                    <strong>
+                        40%
+                    </strong>
+
+                    <span>
+                        OFF
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+             END OF PART 02
+             
+             PART 03 STARTS AFTER THIS
+             → FEATURES / BENEFITS
+        ========================================================== -->
+
+
+            <!-- =========================================================
+         <!-- =========================================================
+     PART 03 — FEATURES / BENEFITS
+
+     Purpose:
+     Premium shopping benefits and customer guarantees.
+
+     Features:
+     ✓ Free Delivery
+     ✓ Secure Payment
+     ✓ Easy Returns
+     ✓ 24/7 Support
+     ✓ Premium hover interaction
+     ✓ Animated icons
+     ✓ Responsive layout
+     ✓ Dark mode compatible
+
+     IMPORTANT:
+     Future Features updates:
+     → Modify PART 03 only.
+========================================================= -->
+
+
+<section
+    class="features"
+    id="features"
+    aria-label="NovaStore shopping benefits"
+>
+
+    <div class="features-grid">
+
+
+        <!-- =================================================
+             FEATURE 01 — FREE DELIVERY
+        ================================================== -->
+
+        <article
+            class="feature-card"
+            aria-label="Free delivery"
+        >
+
+            <div
+                class="feature-icon"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-truck-fast"></i>
+
+            </div>
+
+
+            <div class="feature-content">
+
+                <h3>
+                    Free Delivery
+                </h3>
+
+                <p>
+                    Free delivery on orders above ₹999.
+                </p>
+
+            </div>
+
+
+            <span
+                class="feature-arrow"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </span>
+
+        </article>
+
+
+        <!-- =================================================
+             FEATURE 02 — SECURE PAYMENT
+        ================================================== -->
+
+        <article
+            class="feature-card"
+            aria-label="Secure payment"
+        >
+
+            <div
+                class="feature-icon"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+            </div>
+
+
+            <div class="feature-content">
+
+                <h3>
+                    Secure Payment
+                </h3>
+
+                <p>
+                    Safe and protected checkout every time.
+                </p>
+
+            </div>
+
+
+            <span
+                class="feature-arrow"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </span>
+
+        </article>
+
+
+        <!-- =================================================
+             FEATURE 03 — EASY RETURNS
+        ================================================== -->
+
+        <article
+            class="feature-card"
+            aria-label="Easy returns"
+        >
+
+            <div
+                class="feature-icon"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-rotate-left"></i>
+
+            </div>
+
+
+            <div class="feature-content">
+
+                <h3>
+                    Easy Returns
+                </h3>
+
+                <p>
+                    Simple 7-day return policy for eligible products.
+                </p>
+
+            </div>
+
+
+            <span
+                class="feature-arrow"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </span>
+
+        </article>
+
+
+        <!-- =================================================
+             FEATURE 04 — 24/7 SUPPORT
+        ================================================== -->
+
+        <article
+            class="feature-card"
+            aria-label="24/7 customer support"
+        >
+
+            <div
+                class="feature-icon"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-headset"></i>
+
+            </div>
+
+
+            <div class="feature-content">
+
+                <h3>
+                    24/7 Support
+                </h3>
+
+                <p>
+                    Our support team is always here to help.
+                </p>
+
+            </div>
+
+
+            <span
+                class="feature-arrow"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </span>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     END OF PART 03
+========================================================= -->
+
+  
+
+
+
+
+        <!-- =========================================================
+       <!-- =========================================================
+     PART 04 — SHOP BY CATEGORY
+
+     Purpose:
+     Premium visual category discovery.
+
+     Features:
+     ✓ 4 main categories
+     ✓ Category numbers
+     ✓ Product counts
+     ✓ Image overlay
+     ✓ Hover zoom
+     ✓ Animated arrow
+     ✓ Category badges
+     ✓ JavaScript-compatible data-category values
+     ✓ Accessible buttons
+     ✓ Responsive friendly structure
+
+     IMPORTANT:
+     DO NOT CHANGE:
+     data-category="electronics"
+     data-category="fashion"
+     data-category="shoes"
+     data-category="accessories"
+
+     Future category updates:
+     → Modify PART 04 only.
+========================================================= -->
+
+
+<section
+    class="section categories-section"
+    id="categories"
+    aria-labelledby="categories-title"
+>
+
+
+    <!-- =====================================================
+         CATEGORY HEADER
+    ====================================================== -->
+
+    <div class="section-heading">
+
+        <div>
+
+            <p class="eyebrow">
+                EXPLORE COLLECTIONS
+            </p>
+
+            <h2 id="categories-title">
+                Shop by category
+            </h2>
+
+            <p class="categories-intro">
+                Explore our handpicked collections and find
+                something made for your style.
+            </p>
+
+        </div>
+
+
+        <!-- VIEW ALL -->
+
+        <a
+            href="#products"
+            class="view-all"
+            aria-label="View all products"
+        >
+
+            <span>
+                View all
+            </span>
+
+            <i
+                class="fa-solid fa-arrow-right"
+                aria-hidden="true"
+            ></i>
+
+        </a>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         CATEGORY GRID
+    ====================================================== -->
+
+    <div class="categories-grid">
+
+
+        <!-- =================================================
+             CATEGORY 01 — ELECTRONICS
+        ================================================== -->
+
+        <button
+            type="button"
+            class="category-card category-large"
+            data-category="electronics"
+            aria-label="Browse Electronics products"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1000&q=85"
+                alt="Electronics collection"
+                loading="lazy"
+            >
+
+
+            <!-- IMAGE OVERLAY -->
+
+            <div
+                class="category-overlay"
+                aria-hidden="true"
+            ></div>
+
+
+            <!-- TOP BADGE -->
+
+            <div
+                class="category-badge"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-bolt"></i>
+
+                Trending
+
+            </div>
+
+
+            <!-- CATEGORY CONTENT -->
+
+            <div class="category-content">
+
+                <span class="category-number">
+                    01
+                </span>
+
+                <h3>
+                    Electronics
+                </h3>
+
+                <p>
+                    24 Products
+                </p>
+
+            </div>
+
+
+            <!-- CATEGORY ARROW -->
+
+            <div
+                class="category-arrow"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-arrow-up-right"></i>
+
+            </div>
+
+        </button>
+
+
+
+        <!-- =================================================
+             CATEGORY 02 — FASHION
+        ================================================== -->
+
+        <button
+            type="button"
+            class="category-card"
+            data-category="fashion"
+            aria-label="Browse Fashion products"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85"
+                alt="Fashion collection"
+                loading="lazy"
+            >
+
+
+            <div
+                class="category-overlay"
+                aria-hidden="true"
+            ></div>
+
+
+            <!-- TOP BADGE -->
+
+            <div
+                class="category-badge"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-star"></i>
+
+                Popular
+
+            </div>
+
+
+            <div class="category-content">
+
+                <span class="category-number">
+                    02
+                </span>
+
+                <h3>
+                    Fashion
+                </h3>
+
+                <p>
+                    48 Products
+                </p>
+
+            </div>
+
+
+            <div
+                class="category-arrow"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-arrow-up-right"></i>
+
+            </div>
+
+        </button>
+
+
+
+        <!-- =================================================
+             CATEGORY 03 — SHOES
+        ================================================== -->
+
+        <button
+            type="button"
+            class="category-card"
+            data-category="shoes"
+            aria-label="Browse Shoes products"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85"
+                alt="Shoes collection"
+                loading="lazy"
+            >
+
+
+            <div
+                class="category-overlay"
+                aria-hidden="true"
+            ></div>
+
+
+            <!-- TOP BADGE -->
+
+            <div
+                class="category-badge"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-fire"></i>
+
+                Hot Picks
+
+            </div>
+
+
+            <div class="category-content">
+
+                <span class="category-number">
+                    03
+                </span>
+
+                <h3>
+                    Shoes
+                </h3>
+
+                <p>
+                    36 Products
+                </p>
+
+            </div>
+
+
+            <div
+                class="category-arrow"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-arrow-up-right"></i>
+
+            </div>
+
+        </button>
+
+
+
+        <!-- =================================================
+             CATEGORY 04 — ACCESSORIES
+        ================================================== -->
+
+        <button
+            type="button"
+            class="category-card"
+            data-category="accessories"
+            aria-label="Browse Accessories products"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1523779917675-b6ed3a42a561?auto=format&fit=crop&w=900&q=85"
+                alt="Accessories collection"
+                loading="lazy"
+            >
+
+
+            <div
+                class="category-overlay"
+                aria-hidden="true"
+            ></div>
+
+
+            <!-- TOP BADGE -->
+
+            <div
+                class="category-badge"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-gem"></i>
+
+                Premium
+
+            </div>
+
+
+            <div class="category-content">
+
+                <span class="category-number">
+                    04
+                </span>
+
+                <h3>
+                    Accessories
+                </h3>
+
+                <p>
+                    29 Products
+                </p>
+
+            </div>
+
+
+            <div
+                class="category-arrow"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-arrow-up-right"></i>
+
+            </div>
+
+        </button>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     END OF PART 04
+
+     NEXT:
+     PART 05 → PRODUCTS
+========================================================= -->
+
+  <!-- =========================================================
+     PART 05 — PRODUCTS
+
+     Purpose:
+     Premium product discovery, search and filtering.
+
+     Features:
+     ✓ Product search
+     ✓ Category filters
+     ✓ Dynamic product rendering
+     ✓ Product count indicator
+     ✓ Clear search
+     ✓ Empty state
+     ✓ View more
+     ✓ Responsive structure
+     ✓ Dark mode compatible
+
+     IMPORTANT JS HOOKS — DO NOT RENAME:
+     → searchInput
+     → productGrid
+     → noProducts
+     → clearSearchBtn
+     → viewMoreProducts
+
+     Product cards are generated by JavaScript.
+     Do NOT manually add cards inside #productGrid.
+
+     Future product UI updates:
+     → Modify PART 05 only.
+========================================================= -->
+
+
+<section
+    class="products"
+    id="products"
+    aria-labelledby="products-title"
+>
+
+
+    <!-- =====================================================
+         PRODUCTS HEADER
+    ====================================================== -->
+
+    <div class="products-header">
+
+
+        <!-- =================================================
+             TITLE AREA
+        ================================================== -->
+
+        <div class="products-heading-content">
+
+            <p class="eyebrow">
+                OUR COLLECTION
+            </p>
+
+
+            <h2 id="products-title">
+                Trending products
+            </h2>
+
+
+            <p class="products-intro">
+                Discover our most-loved picks, fresh arrivals
+                and everyday essentials.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             SEARCH
+        ================================================== -->
+
+        <div
+            class="search-box"
+            role="search"
+            aria-label="Search products"
+        >
+
+            <i
+                class="fa-solid fa-magnifying-glass"
+                aria-hidden="true"
+            ></i>
+
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search products..."
+                aria-label="Search products"
+                autocomplete="off"
+            >
+
+            <button
+    type="button"
+    class="search-clear-btn"
+    id="searchClearBtn"
+    aria-label="Clear search"
+    title="Clear search"
+>
+    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+</button>
+
+
+            <!-- Clear search -->
+
+            <button
+                type="button"
+                class="search-clear"
+                id="clearSearchInput"
+                aria-label="Clear product search"
+                title="Clear search"
+            >
+
+                <i
+                    class="fa-solid fa-xmark"
+                    aria-hidden="true"
+                ></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         PRODUCT TOOLBAR
+    ====================================================== -->
+
+    <div class="products-toolbar">
+
+
+        <!-- =================================================
+             CATEGORY FILTERS
+        ================================================== -->
+
+        <div
+            class="product-filters"
+            aria-label="Product categories"
+        >
+
+
+            <button
+                type="button"
+                class="filter-btn active"
+                data-filter="all"
+            >
+
+                <i
+                    class="fa-solid fa-layer-group"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    All
+                </span>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="filter-btn"
+                data-filter="electronics"
+            >
+
+                <i
+                    class="fa-solid fa-microchip"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    Electronics
+                </span>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="filter-btn"
+                data-filter="fashion"
+            >
+
+                <i
+                    class="fa-solid fa-shirt"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    Fashion
+                </span>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="filter-btn"
+                data-filter="shoes"
+            >
+
+                <i
+                    class="fa-solid fa-shoe-prints"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    Shoes
+                </span>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="filter-btn"
+                data-filter="accessories"
+            >
+
+                <i
+                    class="fa-solid fa-gem"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    Accessories
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             PRODUCT META
+        ================================================== -->
+
+        <div
+            class="products-meta"
+            aria-live="polite"
+        >
+
+            <span class="products-meta-icon">
+                <i
+                    class="fa-solid fa-box"
+                    aria-hidden="true"
+                ></i>
+            </span>
+
+            <span>
+                Curated for you
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         PRODUCT GRID
+
+         JavaScript dynamically renders products here.
+    ====================================================== -->
+
+    <div
+        id="productGrid"
+        class="product-grid"
+        aria-live="polite"
+        aria-label="Product list"
+    ></div>
+
+
+
+    <!-- =====================================================
+         NO PRODUCTS STATE
+    ====================================================== -->
+
+    <div
+        id="noProducts"
+        class="no-products"
+        hidden
+    >
+
+
+        <div
+            class="no-products-icon"
+            aria-hidden="true"
+        >
+
+            <i class="fa-solid fa-box-open"></i>
+
+        </div>
+
+
+        <span class="no-products-label">
+            NOTHING HERE
+        </span>
+
+
+        <h3>
+            No products found
+        </h3>
+
+
+        <p>
+            Try another search or explore a different category.
+        </p>
+
+
+        <button
+            type="button"
+            id="clearSearchBtn"
+            class="secondary-btn"
+        >
+
+            <i
+                class="fa-solid fa-rotate-left"
+                aria-hidden="true"
+            ></i>
+
+            <span>
+                Clear Search
+            </span>
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         PRODUCTS FOOTER
+    ====================================================== -->
+
+    <div class="products-footer">
+
+
+        <button
+            type="button"
+            class="view-more-btn"
+            id="viewMoreProducts"
+        >
+
+            <span>
+                View More Products
+            </span>
+
+            <i
+                class="fa-solid fa-arrow-down"
+                aria-hidden="true"
+            ></i>
+
+        </button>
+
+
+        <!-- Trust message -->
+
+        <p class="products-trust">
+
+            <i
+                class="fa-solid fa-shield-heart"
+                aria-hidden="true"
+            ></i>
+
+            Secure shopping · Quality picks · Easy returns
+
+        </p>
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     END OF PART 05
+
+     NEXT:
+     PART 06 → ABOUT / WHY NOVASTORE
+========================================================= -->
+
+
+    <!-- =========================================================
+     PART 06 — ABOUT / WHY NOVASTORE
+
+     Purpose:
+     Build brand trust and explain the NovaStore experience.
+
+     Features:
+     ✓ Brand story
+     ✓ Premium visual
+     ✓ Trust badge
+     ✓ Experience badge
+     ✓ Key benefits
+     ✓ Customer statistics
+     ✓ CTA
+     ✓ Semantic structure
+     ✓ Accessible content
+     ✓ Responsive friendly layout
+
+     IMPORTANT:
+     Existing CSS classes are preserved wherever possible.
+
+     Future About updates:
+     → Modify PART 06 only.
+========================================================= -->
+
+
+<section
+    class="about"
+    id="about"
+    aria-labelledby="about-title"
+>
+
+
+    <div class="about-container">
+
+
+        <!-- =================================================
+             ABOUT VISUAL
+        ================================================== -->
+
+        <div class="about-visual">
+
+
+            <!-- Decorative background element -->
+
+            <div
+                class="about-decoration"
+                aria-hidden="true"
+            ></div>
+
+
+            <!-- Main image -->
+
+            <div class="about-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=85"
+                    alt="Modern NovaStore shopping collection"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <!-- =================================================
+                 TRUST BADGE
+            ================================================== -->
+
+            <div
+                class="about-badge"
+                aria-label="NovaStore customer rating"
+            >
+
+                <div
+                    class="about-badge-icon"
+                    aria-hidden="true"
+                >
+
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+
+                <div class="about-badge-content">
+
+                    <strong>
+                        4.9/5
+                    </strong>
+
+                    <span>
+                        Loved by shoppers
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 EXPERIENCE BADGE
+            ================================================== -->
+
+            <div
+                class="about-experience"
+                aria-label="NovaStore shopping experience"
+            >
+
+                <i
+                    class="fa-solid fa-sparkles"
+                    aria-hidden="true"
+                ></i>
+
+                <div>
+
+                    <strong>
+                        Premium Experience
+                    </strong>
+
+                    <span>
+                        Made for modern shoppers
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             ABOUT CONTENT
+        ================================================== -->
+
+        <div class="about-content">
+
+
+            <!-- Label -->
+
+            <div class="about-label">
+
+                <span
+                    class="about-label-dot"
+                    aria-hidden="true"
+                ></span>
+
+                WHY NOVASTORE
+
+            </div>
+
+
+            <!-- Heading -->
+
+            <h2 id="about-title">
+
+                Shopping made
+
+                <span>
+                    simple.
+                </span>
+
+            </h2>
+
+
+            <!-- Description -->
+
+            <p class="about-description">
+
+                NovaStore brings fashion, electronics,
+                accessories and everyday essentials together
+                in one modern shopping experience.
+
+                We focus on quality products, simple discovery
+                and a checkout experience that stays effortless.
+
+            </p>
+
+
+            <!-- =================================================
+                 KEY BENEFITS
+            ================================================== -->
+
+            <div
+                class="about-points"
+                aria-label="NovaStore benefits"
+            >
+
+
+                <!-- BENEFIT 01 -->
+
+                <div class="about-point">
+
+                    <div
+                        class="about-point-icon"
+                        aria-hidden="true"
+                    >
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </div>
+
+                    <span>
+                        Carefully selected products
+                    </span>
+
+                </div>
+
+
+                <!-- BENEFIT 02 -->
+
+                <div class="about-point">
+
+                    <div
+                        class="about-point-icon"
+                        aria-hidden="true"
+                    >
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                    </div>
+
+                    <span>
+                        Secure and simple checkout
+                    </span>
+
+                </div>
+
+
+                <!-- BENEFIT 03 -->
+
+                <div class="about-point">
+
+                    <div
+                        class="about-point-icon"
+                        aria-hidden="true"
+                    >
+
+                        <i class="fa-solid fa-truck-fast"></i>
+
+                    </div>
+
+                    <span>
+                        Fast and reliable delivery
+                    </span>
+
+                </div>
+
+
+                <!-- BENEFIT 04 -->
+
+                <div class="about-point">
+
+                    <div
+                        class="about-point-icon"
+                        aria-hidden="true"
+                    >
+
+                        <i class="fa-solid fa-headset"></i>
+
+                    </div>
+
+                    <span>
+                        Customer-first support
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 TRUST STATS
+            ================================================== -->
+
+            <div
+                class="about-stats"
+                aria-label="NovaStore statistics"
+            >
+
+
+                <!-- STAT 01 -->
+
+                <div class="about-stat">
+
+                    <strong>
+                        50K+
+                    </strong>
+
+                    <span>
+                        Happy Customers
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="about-stat-divider"
+                    aria-hidden="true"
+                ></div>
+
+
+                <!-- STAT 02 -->
+
+                <div class="about-stat">
+
+                    <strong>
+                        2K+
+                    </strong>
+
+                    <span>
+                        Products
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="about-stat-divider"
+                    aria-hidden="true"
+                ></div>
+
+
+                <!-- STAT 03 -->
+
+                <div class="about-stat">
+
+                    <strong>
+                        4.9/5
+                    </strong>
+
+                    <span>
+                        Customer Rating
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CTA AREA
+            ================================================== -->
+
+            <div class="about-actions">
+
+
+                <a
+                    href="#products"
+                    class="about-cta"
+                    aria-label="Explore NovaStore products"
+                >
+
+                    <span>
+                        Explore Products
+                    </span>
+
+                    <i
+                        class="fa-solid fa-arrow-right"
+                        aria-hidden="true"
+                    ></i>
+
+                </a>
+
+
+                <span class="about-secure-note">
+
+                    <i
+                        class="fa-solid fa-circle-check"
+                        aria-hidden="true"
+                    ></i>
+
+                    Trusted shopping experience
+
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     END OF PART 06
+
+     NEXT:
+     PART 07 → NEWSLETTER
+========================================================= -->
+
+
+    
+
+       <!-- =========================================================
+     PART 07 — NEWSLETTER
+
+     Purpose:
+     Collect customer emails for:
+     ✓ New arrivals
+     ✓ Exclusive deals
+     ✓ Limited drops
+     ✓ Product updates
+
+     Features:
+     ✓ Premium newsletter layout
+     ✓ Email validation-ready form
+     ✓ Benefits list
+     ✓ Trust / privacy messaging
+     ✓ Accessible form controls
+     ✓ Backend-ready structure
+     ✓ Responsive friendly
+
+     IMPORTANT:
+     JavaScript / backend can later connect to:
+     → #newsletterForm
+     → #newsletterEmail
+     → #newsletterSubmit
+
+     Future Newsletter updates:
+     → Modify PART 07 only.
+========================================================= -->
+
+
+<section
+    class="newsletter"
+    id="newsletter"
+    aria-labelledby="newsletter-title"
+>
+
+    <div class="newsletter-container">
+
+
+        <!-- =================================================
+             NEWSLETTER CONTENT
+        ================================================== -->
+
+        <div class="newsletter-content">
+
+
+            <!-- Decorative icon -->
+
+            <div
+                class="newsletter-icon"
+                aria-hidden="true"
+            >
+
+                <i class="fa-regular fa-envelope"></i>
+
+            </div>
+
+
+            <!-- Label -->
+
+            <div class="newsletter-label">
+
+                <span
+                    class="newsletter-label-dot"
+                    aria-hidden="true"
+                ></span>
+
+                STAY IN THE LOOP
+
+            </div>
+
+
+            <!-- Heading -->
+
+            <h2 id="newsletter-title">
+
+                Get the latest
+
+                <span>
+                    drops.
+                </span>
+
+            </h2>
+
+
+            <!-- Description -->
+
+            <p>
+
+                Be the first to know about new arrivals,
+                exclusive offers and limited-time deals.
+
+                No spam. Just the good stuff.
+
+            </p>
+
+
+            <!-- =================================================
+                 NEWSLETTER BENEFITS
+            ================================================== -->
+
+            <div
+                class="newsletter-benefits"
+                aria-label="Newsletter benefits"
+            >
+
+
+                <!-- BENEFIT 01 -->
+
+                <div class="newsletter-benefit">
+
+                    <span
+                        class="newsletter-benefit-icon"
+                        aria-hidden="true"
+                    >
+
+                        <i class="fa-solid fa-bolt"></i>
+
+                    </span>
+
+                    <span>
+                        Early access
+                    </span>
+
+                </div>
+
+
+                <!-- BENEFIT 02 -->
+
+                <div class="newsletter-benefit">
+
+                    <span
+                        class="newsletter-benefit-icon"
+                        aria-hidden="true"
+                    >
+
+                        <i class="fa-solid fa-tag"></i>
+
+                    </span>
+
+                    <span>
+                        Exclusive deals
+                    </span>
+
+                </div>
+
+
+                <!-- BENEFIT 03 -->
+
+                <div class="newsletter-benefit">
+
+                    <span
+                        class="newsletter-benefit-icon"
+                        aria-hidden="true"
+                    >
+
+                        <i class="fa-solid fa-sparkles"></i>
+
+                    </span>
+
+                    <span>
+                        New drops
+                    </span>
+
+                </div>
+
+
+                <!-- BENEFIT 04 -->
+
+                <div class="newsletter-benefit">
+
+                    <span
+                        class="newsletter-benefit-icon"
+                        aria-hidden="true"
+                    >
+
+                        <i class="fa-solid fa-ban"></i>
+
+                    </span>
+
+                    <span>
+                        No spam
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             NEWSLETTER FORM
+        ================================================== -->
+
+        <div class="newsletter-form-wrapper">
+
+
+            <!-- Form -->
+
+            <form
+                class="newsletter-form"
+                id="newsletterForm"
+                novalidate
+            >
+
+
+                <!-- Email label -->
+
+                <label
+                    for="newsletterEmail"
+                    class="visually-hidden"
+                >
+                    Email address
+                </label>
+
+
+                <!-- Email input -->
+
+                <div class="newsletter-input-wrapper">
+
+                    <i
+                        class="fa-regular fa-envelope"
+                        aria-hidden="true"
+                    ></i>
+
+
+                    <input
+                        type="email"
+                        id="newsletterEmail"
+                        name="email"
+                        placeholder="Enter your email address"
+                        autocomplete="email"
+                        inputmode="email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Subscribe -->
+
+                <button
+                    type="submit"
+                    id="newsletterSubmit"
+                >
+
+                    <span>
+                        Subscribe
+                    </span>
+
+                    <i
+                        class="fa-solid fa-arrow-right"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+
+            </form>
+
+
+            <!-- =================================================
+                 TRUST ROW
+            ================================================== -->
+
+            <div class="newsletter-trust">
+
+                <span>
+
+                    <i
+                        class="fa-solid fa-shield-halved"
+                        aria-hidden="true"
+                    ></i>
+
+                    Your email is safe with us.
+
+                </span>
+
+
+                <span>
+
+                    <i
+                        class="fa-solid fa-circle-check"
+                        aria-hidden="true"
+                    ></i>
+
+                    Unsubscribe anytime.
+
+                </span>
+
+            </div>
+
+
+            <!-- =================================================
+                 PRIVACY NOTE
+            ================================================== -->
+
+            <p class="newsletter-note">
+
+                By subscribing, you agree to receive
+                NovaStore updates and offers.
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     END OF PART 07
+
+     NEXT:
+     PART 08 → FOOTER
+========================================================= -->
+
+
+       <!-- =========================================================
+     PART 08 — FOOTER
+
+     Purpose:
+     Premium navigation, brand trust, support and legal links.
+
+     Features:
+     ✓ Brand identity
+     ✓ Social links
+     ✓ Shop navigation
+     ✓ Company navigation
+     ✓ Customer support
+     ✓ Newsletter CTA
+     ✓ Trust indicators
+     ✓ Payment methods
+     ✓ Legal navigation
+     ✓ Responsive structure
+
+     IMPORTANT:
+     Existing section anchors are preserved:
+     → #home
+     → #products
+     → #categories
+     → #about
+     → #newsletter
+
+     Future Footer updates:
+     → ONLY PART 08
+========================================================= -->
+
+
+<footer
+    class="footer"
+    id="footer"
+>
+
+
+    <div class="footer-container">
+
+
+        <!-- =================================================
+             FOOTER TOP / BRAND
+        ================================================== -->
+
+        <div class="footer-grid">
+
+
+            <!-- =================================================
+                 BRAND COLUMN
+            ================================================== -->
+
+            <div class="footer-brand">
+
+
+                <a
+                    href="#home"
+                    class="footer-logo"
+                    aria-label="NovaStore Home"
+                >
+
+                    <span
+                        class="footer-logo-mark"
+                        aria-hidden="true"
+                    >
+                        N
+                    </span>
+
+                    NovaStore
+
+                </a>
+
+
+                <p class="footer-description">
+
+                    Modern shopping for modern lifestyles.
+                    Discover products you love, all in one place.
+
+                </p>
+
+
+                <!-- Trust -->
+
+                <div class="footer-trust">
+
+                    <div class="footer-trust-item">
+
+                        <i
+                            class="fa-solid fa-shield-halved"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Secure Shopping
+                        </span>
+
+                    </div>
+
+
+                    <div class="footer-trust-item">
+
+                        <i
+                            class="fa-solid fa-truck-fast"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Fast Delivery
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     SOCIAL LINKS
+                ================================================== -->
+
+                <div
+                    class="footer-socials"
+                    aria-label="Social media links"
+                >
+
+                    <a
+                        href="#"
+                        class="footer-social"
+                        aria-label="Instagram"
+                        title="Instagram"
+                    >
+                        <i
+                            class="fa-brands fa-instagram"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="footer-social"
+                        aria-label="Facebook"
+                        title="Facebook"
+                    >
+                        <i
+                            class="fa-brands fa-facebook-f"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="footer-social"
+                        aria-label="X"
+                        title="X"
+                    >
+                        <i
+                            class="fa-brands fa-x-twitter"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="footer-social"
+                        aria-label="YouTube"
+                        title="YouTube"
+                    >
+                        <i
+                            class="fa-brands fa-youtube"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SHOP
+            ================================================== -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Shop
+                </h3>
+
+
+                <nav
+                    class="footer-links"
+                    aria-label="Shop links"
+                >
+
+                    <a href="#products">
+                        All Products
+                    </a>
+
+                    <a href="#categories">
+                        Electronics
+                    </a>
+
+                    <a href="#categories">
+                        Fashion
+                    </a>
+
+                    <a href="#categories">
+                        Shoes
+                    </a>
+
+                    <a href="#categories">
+                        Accessories
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 COMPANY
+            ================================================== -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Company
+                </h3>
+
+
+                <nav
+                    class="footer-links"
+                    aria-label="Company links"
+                >
+
+                    <a href="#about">
+                        About Us
+                    </a>
+
+                    <a href="#newsletter">
+                        Newsletter
+                    </a>
+
+                    <a href="#products">
+                        New Arrivals
+                    </a>
+
+                    <a href="#products">
+                        Deals
+                    </a>
+
+                    <a href="#home">
+                        Home
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SUPPORT
+            ================================================== -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Support
+                </h3>
+
+
+                <div class="footer-contact">
+
+
+                    <!-- EMAIL -->
+
+                    <div class="footer-contact-item">
+
+                        <i
+                            class="fa-regular fa-envelope"
+                            aria-hidden="true"
+                        ></i>
+
+                        <a href="mailto:support@novastore.com">
+                            support@novastore.com
+                        </a>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="footer-contact-item">
+
+                        <i
+                            class="fa-solid fa-phone"
+                            aria-hidden="true"
+                        ></i>
+
+                        <a href="tel:+911234567890">
+                            +91 12345 67890
+                        </a>
+
+                    </div>
+
+
+                    <!-- SUPPORT HOURS -->
+
+                    <div class="footer-contact-item">
+
+                        <i
+                            class="fa-regular fa-clock"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Mon — Sun
+                            <br>
+                            24/7 Support
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Support CTA -->
+
+                <a
+                    href="#newsletter"
+                    class="footer-support-cta"
+                >
+
+                    <span>
+                        Need help?
+                    </span>
+
+                    <i
+                        class="fa-solid fa-arrow-right"
+                        aria-hidden="true"
+                    ></i>
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             FOOTER TRUST STRIP
+        ================================================== -->
+
+        <div class="footer-trust-strip">
+
+
+            <div class="footer-trust-highlight">
+
+                <i
+                    class="fa-solid fa-lock"
+                    aria-hidden="true"
+                ></i>
+
+                <div>
+
+                    <strong>
+                        Secure Checkout
+                    </strong>
+
+                    <span>
+                        Your payments are protected
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-trust-highlight">
+
+                <i
+                    class="fa-solid fa-rotate-left"
+                    aria-hidden="true"
+                ></i>
+
+                <div>
+
+                    <strong>
+                        Easy Returns
+                    </strong>
+
+                    <span>
+                        Simple return experience
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-trust-highlight">
+
+                <i
+                    class="fa-solid fa-headset"
+                    aria-hidden="true"
+                ></i>
+
+                <div>
+
+                    <strong>
+                        24/7 Support
+                    </strong>
+
+                    <span>
+                        We're here whenever you need us
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             DIVIDER
+        ================================================== -->
+
+        <div
+            class="footer-divider"
+            aria-hidden="true"
+        ></div>
+
+
+
+        <!-- =================================================
+             FOOTER BOTTOM
+        ================================================== -->
+
+        <div class="footer-bottom">
+
+
+            <!-- COPYRIGHT -->
+
+            <p class="footer-copyright">
+
+                © 2026
+
+                <strong>
+                    NovaStore
+                </strong>.
+
+                All rights reserved.
+
+            </p>
+
+
+
+            <!-- LEGAL -->
+
+            <nav
+                class="footer-legal"
+                aria-label="Legal links"
+            >
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms
+                </a>
+
+                <a href="#">
+                    Shipping
+                </a>
+
+                <a href="#">
+                    Returns
+                </a>
+
+            </nav>
+
+
+
+            <!-- PAYMENT METHODS -->
+
+            <div
+                class="footer-payments"
+                aria-label="Accepted payment methods"
+            >
+
+                <span class="payment-badge">
+                    VISA
+                </span>
+
+                <span class="payment-badge">
+                    MC
+                </span>
+
+                <span class="payment-badge">
+                    UPI
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</footer>
+
+
+<!-- =========================================================
+     END OF PART 08
+
+     NEXT:
+     PART 09 → CART DRAWER
+========================================================= -->
+
+
+       <!-- =========================================================
+     PART 09 — CART DRAWER
+
+     Purpose:
+     Premium shopping cart experience.
+
+     Features:
+     ✓ Dynamic cart items
+     ✓ Empty cart state
+     ✓ Cart item count
+     ✓ Quantity-ready structure
+     ✓ Subtotal
+     ✓ Delivery information
+     ✓ Secure checkout
+     ✓ Trust indicators
+     ✓ Mobile friendly structure
+     ✓ Dark mode compatible
+
+     IMPORTANT:
+     JavaScript IDs MUST remain unchanged.
+
+     Required IDs:
+     → overlay
+     → cartDrawer
+     → closeCart
+     → cartItems
+     → cartTotal
+     → checkoutBtn
+
+     Additional preserved IDs:
+     → emptyCart
+     → continueShopping
+
+     Product items are dynamically rendered by JavaScript.
+     Do NOT manually add product cards inside #cartItems.
+
+     Future Cart updates:
+     → Modify PART 09 only.
+========================================================= -->
+
+
+<!-- =========================================================
+     CART OVERLAY
+
+     Appears behind the cart drawer.
+========================================================= -->
+
+<div
+    id="overlay"
+    class="overlay"
+    aria-hidden="true"
+></div>
+
+
+
+<!-- =========================================================
+     CART DRAWER
+========================================================= -->
+
+<aside
+    id="cartDrawer"
+    class="cart-drawer"
+    aria-label="Shopping cart"
+    aria-hidden="true"
+>
+
+
+    <!-- =====================================================
+         CART HEADER
+    ====================================================== -->
+
+    <header class="cart-header">
+
+
+        <!-- CART TITLE -->
+
+        <div class="cart-title">
+
+
+            <span
+                class="cart-title-icon"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+            </span>
+
+
+            <div>
+
+                <div class="cart-heading-row">
+
+                    <h2>
+                        Your Cart
+                    </h2>
+
+
+                    <!-- Item count -->
+
+                    <span
+                        class="cart-count"
+                        id="cartCount"
+                        aria-label="Items in cart"
+                    >
+                        0
+                    </span>
+
+                </div>
+
+
+                <span class="cart-subtitle">
+                    Your selected items
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CLOSE BUTTON -->
+
+        <button
+            type="button"
+            id="closeCart"
+            class="cart-close"
+            aria-label="Close shopping cart"
+            title="Close cart"
+        >
+
+            <i
+                class="fa-solid fa-xmark"
+                aria-hidden="true"
+            ></i>
+
+        </button>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         CART CONTENT
+         
+         JavaScript dynamically inserts product items here.
+         
+         IMPORTANT:
+         Do NOT manually add product cards here.
+    ====================================================== -->
+
+    <div
+        id="cartItems"
+        class="cart-items"
+        aria-live="polite"
+        aria-label="Cart items"
+    ></div>
+
+
+
+    <!-- =====================================================
+         EMPTY CART
+    ====================================================== -->
+
+    <div
+        id="emptyCart"
+        class="empty-cart"
+        hidden
+    >
+
+
+        <!-- ICON -->
+
+        <div
+            class="empty-cart-icon"
+            aria-hidden="true"
+        >
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+        </div>
+
+
+        <span class="empty-cart-label">
+            YOUR BAG IS WAITING
+        </span>
+
+
+        <h3>
+            Your cart is empty
+        </h3>
+
+
+        <p>
+            Looks like you haven't added anything yet.
+            Explore our collection and find something you love.
+        </p>
+
+
+        <button
+            type="button"
+            id="continueShopping"
+            class="secondary-btn"
+        >
+
+            <i
+                class="fa-solid fa-arrow-left"
+                aria-hidden="true"
+            ></i>
+
+            <span>
+                Continue Shopping
+            </span>
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         CART FOOTER
+    ====================================================== -->
+
+    <footer class="cart-footer">
+
+
+        <!-- =================================================
+             FREE DELIVERY MESSAGE
+        ================================================== -->
+
+        <div class="cart-delivery-progress">
+
+
+            <div class="cart-delivery-icon">
+
+                <i
+                    class="fa-solid fa-truck-fast"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+
+            <div class="cart-delivery-content">
+
+                <strong>
+                    Free delivery on orders above ₹999
+                </strong>
+
+                <span>
+                    Add more products to unlock free delivery.
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             TRUST INDICATORS
+        ================================================== -->
+
+        <div class="cart-trust">
+
+
+            <div class="cart-trust-item">
+
+                <i
+                    class="fa-solid fa-shield-halved"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    Secure Checkout
+                </span>
+
+            </div>
+
+
+            <div class="cart-trust-item">
+
+                <i
+                    class="fa-solid fa-rotate-left"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    Easy Returns
+                </span>
+
+            </div>
+
+
+            <div class="cart-trust-item">
+
+                <i
+                    class="fa-solid fa-headset"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    24/7 Support
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PRICE SUMMARY
+        ================================================== -->
+
+        <div class="cart-summary">
+
+
+            <!-- SUBTOTAL -->
+
+            <div class="subtotal">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong id="cartTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <!-- SHIPPING -->
+
+            <div class="cart-summary-row">
+
+                <span>
+                    Shipping
+                </span>
+
+                <span class="cart-shipping-status">
+                    Calculated at checkout
+                </span>
+
+            </div>
+
+
+            <!-- TOTAL NOTE -->
+
+            <div class="cart-summary-note">
+
+                <i
+                    class="fa-solid fa-circle-info"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    Taxes and final shipping charges are calculated
+                    at checkout.
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CHECKOUT CTA
+        ================================================== -->
+
+        <button
+            type="button"
+            id="checkoutBtn"
+            class="checkout-btn"
+        >
+
+            <span>
+                Proceed to Checkout
+            </span>
+
+            <i
+                class="fa-solid fa-arrow-right"
+                aria-hidden="true"
+            ></i>
+
+        </button>
+
+
+
+        <!-- =================================================
+             PAYMENT SECURITY
+        ================================================== -->
+
+        <div class="cart-payment-security">
+
+            <i
+                class="fa-solid fa-lock"
+                aria-hidden="true"
+            ></i>
+
+            <span>
+                Secure & encrypted checkout
+            </span>
+
+        </div>
+
+
+    </footer>
+
+
+</aside>
+
+
+<!-- =========================================================
+     END OF PART 09
+
+     NEXT:
+     PART 10 → JAVASCRIPT / FINAL DOCUMENT CLOSING
+========================================================= -->
+
+
+       <!-- =========================================================
+     PART 10 — SCRIPT LOADER / FINAL DOCUMENT CLOSING
+
+     Purpose:
+     ✓ Load NovaStore JavaScript
+     ✓ Keep application logic outside index.html
+     ✓ Use defer for DOM-safe execution
+     ✓ Close the HTML document cleanly
+
+     IMPORTANT:
+     Do NOT put application JavaScript directly inside
+     index.html.
+
+     Main application logic:
+     → script.js
+========================================================= -->
+
+
+<!-- =========================================================
+     NOVASTORE APPLICATION SCRIPT
+========================================================= -->
+
+<script
+    src="script.js"
+    defer
+></script>
+
+
+<!-- =========================================================
+     END OF BODY
+========================================================= -->
+
+</body>
+
+
+<!-- =========================================================
+     END OF DOCUMENT
+========================================================= -->
+
+</html>
